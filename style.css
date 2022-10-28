@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    font-family: "Audiowide", sans-serif;
+    min-width: 300px;
+    min-height: 100vh;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+    background-color: rgba(0,0,0,.9);
+    font-style: "Audiowide";
+}
+
+.logo > a {
+    text-decoration: none;
+}
+
+.logo > a:hover {
+    font-style: oblique;
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(119, 0, 255),
+    0 0 82px rgb(174, 0, 255),
+    0 0 92px rgb(162, 0, 255),
+    0 0 102px rgb(255, 0, 242),
+    0 0 151px rgb(183, 0, 255);
+    font-weight: bolder;
+}
+
+.nav > ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+ul > li > a {
+    text-decoration: none;
+}
+
+ul > li > a:hover {
+    font-style: oblique;
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(119, 0, 255),
+    0 0 82px rgb(174, 0, 255),
+    0 0 92px rgb(162, 0, 255),
+    0 0 102px rgb(255, 0, 242),
+    0 0 151px rgb(183, 0, 255);
+    font-weight: bolder;
+  
+}
+
+.container {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    gap: 1rem;
+    
+}
+
+.box {
+    height: 300px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    background-color: rgba(0,0,0,.7);
+    color: white;
+    min-width: 200px;
+    margin-right: 10px;
+
+    padding-left: 30px;
+}
+
+.box1 {
+    height: 300px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    background-color: rgba(0,0,0,.7);
+    color: white;
+    min-width: 200px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.box1 > a:hover {
+    font-size: x-large;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(119, 0, 255),
+      0 0 82px rgb(174, 0, 255),
+      0 0 92px rgb(162, 0, 255),
+      0 0 102px rgb(255, 0, 242),
+      0 0 151px rgb(183, 0, 255);
+    
+}
+
+.box > img {
+    max-height: 300px;
+    max-width: 450px;
+    min-width: 200px;
+}
+
+header {
+    background-image: url(https://images.pexels.com/photos/4488636/pexels-photo-4488636.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+
+
+/* This is not the perfect way to make the navbar responsive and the way I want it to be. */
+/* But, I am happy with the result! */
+
+@media screen and (min-width: 100px) {
+    .nav {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .nav {
+        justify-content: space-around;
+    }
+}
+
+
+/* Code below is for the 1st section of the page / the one after the header */
+
+.boxes {
+    background-image: url(https://images.pexels.com/photos/2825033/pexels-photo-2825033.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin: 23px 0;
+}
+
+
+/* .boxes {
+    border: 2px solid red;
+    background-color: rgba(97, 21, 97, 0.3);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+*/
+
+
+.boxes > .container-2 {
+    color: white;
+    gap: 1rem;
+} 
+
+
+.code-lang-box {
+    border: 1px solid white;
+    width: 250px;
+    height: 230px;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0,0,0,.7);
+    color: white;
+    
+}
+
+.code-lang-box > img {
+    max-width: 200px;
+    max-height: 150px;
+    
+}
+
+footer {
+    color: white;
+    height: 30px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(27, 4, 46, 0.250);
+    margin-top: auto;
+}
+
+footer > a {
+    font-size: 12px;
+}
+
+.container-2 {
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+}
+
+
+/* Last Container with CTA -- Im not going to add a quote */
+
+.CTA {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: url(https://images.pexels.com/photos/8107896/pexels-photo-8107896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-bottom: 20px;
+
+}
+
+
+.container-3 {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+}
+
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 600px;
+    background-color: rgba(0,0,0,.7);
+    padding: 30px;
+    border: 1px solid white;
+
+}
+
+
+.button-div {
+    display: flex;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 16px;
+    border-style: none;
+}
+
+button > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
